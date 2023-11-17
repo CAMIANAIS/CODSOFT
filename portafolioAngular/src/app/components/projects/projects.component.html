@@ -1,0 +1,15 @@
+<h1>Projects</h1>
+
+<div class="projects">
+  <div class="projectCard" *ngFor="let project of projects">
+    <mat-card class="project-card">
+      <mat-card-header>
+        <mat-card-title>{{ project.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-raised-button (click)="redirectToProject(project.id)" color="primary">See more</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
