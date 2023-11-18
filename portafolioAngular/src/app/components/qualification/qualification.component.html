@@ -14,16 +14,3 @@
     </div>
   </div>
   
-  <h1>Previous Experience</h1>
-  <div class="experience-container">
-    <mat-card class="experience-card" *ngFor="let job of jobList">
-      <mat-card-header>
-        <mat-card-title>{{ job.company }}</mat-card-title>
-        <mat-card-subtitle>{{ job.position }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{ job.startDate }} - {{ job.endDate || 'Presente' }}</p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-  

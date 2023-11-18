@@ -1,45 +1,37 @@
+<!-- skills.component.html -->
 <h1>Technical Skills</h1>
-<div class="card-container">
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Frontend Skills</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>Angular</li>
-          <li>React</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
 
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Habilidades Backend</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li>Node.js</li>
-          <li>MySQL Server</li>
-          <li>GitHub API</li>
-          <li>NPM</li>
-          <li>Jest</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Otras Habilidades</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li>Microsoft Office</li>
-          <li>Figma, Miro, Canva<li>
-          <li>Trello, Notion</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+<div class="grid-container">
+  <!-- Frontend Skills -->
+  <div class="category">
+    <h2>Frontend Skills</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[0].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
   </div>
+
+  <!-- Backend Skills -->
+  <div class="category">
+    <h2>Habilidades Backend</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[1].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Otras Habilidades -->
+  <div class="category">
+    <h2>Otras Habilidades</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[2].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

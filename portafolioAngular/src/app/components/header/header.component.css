@@ -1,0 +1,10 @@
+/* Agrega estos estilos a tu archivo de estilos CSS */
+
+h1, h2 {
+    color: white; /* Color de letra blanco */
+    font-family: 'TuFuente', sans-serif; /* Reemplaza 'TuFuente' con la fuente deseada */
+    font-weight: bold; /* Letra en negrita (bold) */
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  

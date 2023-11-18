@@ -1,0 +1,45 @@
+.background-container {
+    min-height: 50vh; /* Establece la altura mínima para cubrir la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding:5%;
+    padding-left:20%;
+    padding-right: 20%;
+  }
+  
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 100%; /* Ocupa el 100% de la altura del contenedor */
+    background-image: url('src/assets/img/header-photo.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: contrast(0.5); /* Ajusta el valor de contrast según sea necesario para cambiar el contraste */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  
+  @media (max-width: 768px) {
+    .background-container {
+      padding-left: 2%; /* Ajusta el padding para tamaños de pantalla más pequeños */
+      padding-right: 2%; /* Ajusta el padding para tamaños de pantalla más pequeños */
+    }
+  }
+  
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

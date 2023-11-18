@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
@@ -8,6 +8,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
@@ -19,7 +22,9 @@ import { QualificationComponent } from './components/qualification/qualification
 import { ServicesComponent } from './components/services/services.component';
 import { OrganizerComponent } from './components/services/organizer/organizer.component';
 import { FrontendComponent } from './components/services/frontend/frontend.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import { LanguagesComponent } from './components/languages/languages.component';
+import { ContactComponent } from './components/contact/contact.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +36,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     QualificationComponent,
     ServicesComponent,
     OrganizerComponent,
-    FrontendComponent
+    FrontendComponent,
+    LanguagesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -43,8 +50,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
-    MatDialogModule
+    MatDialogModule,
+    CarouselModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

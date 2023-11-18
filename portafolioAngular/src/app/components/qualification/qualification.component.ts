@@ -23,21 +23,4 @@ export class QualificationComponent {
     // Agrega más experiencias educativas según sea necesario
   ];
 
-  jobList = [
-    {
-      company: 'MVS REPRESENTACIONES S.R.L',
-      position: 'Accountant Assistant',
-      startDate: 'October 2020',
-      endDate: 'December 2022',
-
-    },
-    {
-      company: 'BSG INSTITUTE',
-      position: 'Financial Assistants',
-      startDate: 'August 2019',
-      endDate: 'November 2019',
-
-    }
-    // Agrega más trabajos según sea necesario
-  ];
 }
