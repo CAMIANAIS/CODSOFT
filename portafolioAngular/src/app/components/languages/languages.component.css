@@ -6,15 +6,17 @@
   }
   
 
-  .languages , .courses {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  .languages {
+    display: flex;
     gap: 20px;
-    padding: 20px;
+    padding-right: 250px;
+    padding-left: 250px;
     align-items: center;
+    margin-bottom: 7%;
   }
+  
 
-  .language-card , .courses-card{
+  .language-card {
     width: 100%;
     background-color: white;
     border: 1px solid #ccc; /* Puedes cambiar el color del borde según tus preferencias */

@@ -23,6 +23,7 @@
   }
   
   p {
-    margin-top: 20px; /* Ajusta el margen superior del texto de derechos reservados según sea necesario */
+    margin-top: 20px; 
+    text-align: center;
   }
   

@@ -1,9 +1,9 @@
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
     gap: 20px;
     padding: 20px;
     align-items: center;
+    margin-bottom: 7%;
   }
 .service-card {
     width: 100%;

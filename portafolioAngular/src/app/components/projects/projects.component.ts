@@ -8,12 +8,33 @@ import { Router } from '@angular/router';
 export class ProjectsComponent {
   constructor(private router: Router) {}
 
-  projects = [
-    { id: 1, title: 'Burger 1997 API Client' },
-    { id: 2, title: 'Wanderlust Movies Traveler Community'},
-    { id: 3, title: 'Markdown Links'},
-    { id: 4, title: 'Arequipa 360 Turistic Social Network '},
-  ];
+// En tu componente TypeScript
+projects = [
+  { 
+    id: 1,
+    content: 'Burger 1997 API Client',
+    webImage: 'assets/img/bqac-web.png',
+    mobileImage: 'assets/img/bqac-mobile.png'
+  },
+  { 
+    id: 2,
+    content: 'Wanderlust Movies Traveler Community',
+    webImage: 'assets/img/mc-web.png',
+    mobileImage: 'assets/img/mc-mobile.png'
+  },
+  { 
+    id: 3,
+    content: 'Markdown Links',
+    webImage: 'assets/img/mdlinks-web.png',
+  },
+  { 
+    id: 4,
+    content: 'Arequipa 360 Turistic Social Network',
+    webImage: 'assets/img/360aqp-web.png',
+    mobileImage: 'assets/img/360aqp-mobile.png'
+  },
+];
+
 
   redirectToProject(projectId: number) {
     const githubRepoUrls = [

@@ -1,0 +1,30 @@
+/* styles.css */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el ancho mínimo y máximo según tus necesidades */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; 
+    margin-bottom: 7%;
+  }
+  
+  .courses-card {
+    width: 100%; /* Utiliza el 100% del ancho del contenedor */
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .courses {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+    .language-card , .courses-card{
+      width: 100%;
+      background-color: white;
+      border: 1px solid #ccc; /* Puedes cambiar el color del borde según tus preferencias */
+      border-radius: 8px; /* Añadir esquinas redondeadas si lo deseas */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
+    }

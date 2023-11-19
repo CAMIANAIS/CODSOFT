@@ -4,12 +4,23 @@
   <div class="projectCard" *ngFor="let project of projects">
     <mat-card class="project-card">
       <mat-card-header>
-        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-content>{{ project.content }}</mat-card-content>
       </mat-card-header>
+      <div class="image-container">
+        <img [src]="project.webImage" alt="Web Image" class="web-image">
+        <!-- Utiliza *ngIf para condicionar la renderización de la imagen móvil -->
+        <ng-container *ngIf="project.mobileImage">
+          <img [src]="project.mobileImage" alt="Mobile Image" class="mobile-image">
+        </ng-container>
+      </div>
       <mat-card-actions>
+        <!-- Mantén el botón fuera de la lógica condicional -->
         <button mat-raised-button (click)="redirectToProject(project.id)" color="primary">See more</button>
       </mat-card-actions>
     </mat-card>
   </div>
 </div>
+
+
+
 

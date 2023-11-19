@@ -1,10 +1,19 @@
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
+}
+
 
   .project-card {
     width: 100%;
@@ -13,4 +22,27 @@
     border-radius: 8px; /* Añadir esquinas redondeadas si lo deseas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
   }
+
+  /* En tu archivo de estilos CSS */
+
+  .image-container {
+    display: flex;
+  }
+
+  .web-image {
+    width: 180px;  /* Ajusta el ancho máximo al 100% del contenedor */
+    height: auto;     /* Mantiene la proporción original de la imagen */
+    display: block;   /* Elimina el espacio adicional por debajo de las imágenes */
+    margin: 0 auto;   /* Centra las imágenes horizontalmente */
+    /* Puedes agregar más estilos según tus necesidades */
+  }
+
+  .mobile-image {
+    width: 70px;  /* Ajusta el ancho máximo al 100% del contenedor */
+    height: auto;     /* Mantiene la proporción original de la imagen */
+    display: block;   /* Elimina el espacio adicional por debajo de las imágenes */
+    margin: 0 auto;   /* Centra las imágenes horizontalmente */
+    /* Puedes agregar más estilos según tus necesidades */
+  }
+
   

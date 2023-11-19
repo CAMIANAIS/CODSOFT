@@ -26,3 +26,7 @@ html, body {
     --md-ref-palette-primary40: #ffd8e8;
 
   }
+
+  h1 {
+    text-align: center;
+  }

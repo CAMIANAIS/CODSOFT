@@ -23,6 +23,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { OrganizerComponent } from './components/services/organizer/organizer.component';
 import { FrontendComponent } from './components/services/frontend/frontend.component';
 import { LanguagesComponent } from './components/languages/languages.component';
+import { CoursesComponent } from './components/courses/courses.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ContactComponent } from './components/contact/contact.component';
     OrganizerComponent,
     FrontendComponent,
     LanguagesComponent,
+    CoursesComponent,
     ContactComponent
   ],
   imports: [

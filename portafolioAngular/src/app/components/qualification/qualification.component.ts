@@ -12,13 +12,15 @@ export class QualificationComponent {
       institution: 'Laboratoria',
       degree: 'Bootcamp Web Development',
       startDate: '2023',
-      endDate: null
+      endDate: null,
+      logo:'download.png'
     },
     {
       institution: 'Instituto del Sur',
       degree: 'Information Systems Development',
       startDate: '2022',
-      endDate: 'Actualidad'
+      endDate: 'Actualidad',
+      logo:'logoisur1.png'
     }
     // Agrega más experiencias educativas según sea necesario
   ];
