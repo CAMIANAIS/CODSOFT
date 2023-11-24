@@ -1,0 +1,33 @@
+.container-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.container-about-me p {
+  margin-bottom: 20px; /* Ajusta el margen inferior del párrafo según sea necesario */
+}
+
+.card-container {
+  display: flex;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+button {
+  margin-top: 20px; /* Ajusta el margen superior del botón según sea necesario */
+}
+
+.small-card{
+  background-color: #94bbe9;
+}
+
+
+
+  p
+    {
+      color: white; /* Color de letra blanco */
+      font-family: 'TuFuente', sans-serif; /* Reemplaza 'TuFuente' con la fuente deseada */
+      font-weight: bold; /* Letra en negrita (bold) */
+    }
+  

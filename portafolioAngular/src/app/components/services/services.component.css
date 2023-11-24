@@ -1,0 +1,14 @@
+.services {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 7%;
+  }
+.service-card {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc; /* Puedes cambiar el color del borde según tus preferencias */
+    border-radius: 8px; /* Añadir esquinas redondeadas si lo deseas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
+  }

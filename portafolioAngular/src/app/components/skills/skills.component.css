@@ -1,0 +1,30 @@
+/* skills.component.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.category {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 7%;
+}
+
+.skill {
+  text-align: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}

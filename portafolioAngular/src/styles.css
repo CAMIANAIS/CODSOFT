@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;900&family=Montserrat&family=Poppins&display=swap');
+
+
+
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+  }
+
+  :root {
+    --md-source: #b4047e;
+    /* primary */
+    --md-ref-palette-primary0: #ffffff;
+    --md-ref-palette-primary10: #ffd8e8;
+    --md-ref-palette-primary20: #3c0028;
+
+    --md-ref-palette-primary25: #ffafd6;
+    --md-ref-palette-primary30: #620043;
+    --md-ref-palette-primary35: #8a0060;
+    --md-ref-palette-primary40: #ffd8e8;
+
+  }
+
+  h1 {
+    text-align: center;
+  }

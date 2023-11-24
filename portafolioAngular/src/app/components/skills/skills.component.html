@@ -1,0 +1,49 @@
+<!-- skills.component.html -->
+<h1>Technical Skills</h1>
+
+<div class="grid-container">
+  <!-- Frontend Skills -->
+  <div class="category">
+    <h2>Frontend Skills</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[0].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend Skills -->
+  <div class="category">
+    <h2>Backend Skills</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[1].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testing Skills -->
+  <div class="category">
+    <h2>Testing Skills</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[2].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Skills -->
+  <div class="category">
+    <h2>Other Skills</h2>
+    <div class="skills">
+      <div *ngFor="let item of skills[3].items" class="skill">
+        <img [src]="item.logo" alt="{{ item.name }} Logo" class="logo-image">
+        <div class="skill-name">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+

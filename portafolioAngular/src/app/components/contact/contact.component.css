@@ -1,0 +1,29 @@
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:15px
+  }
+  
+  .container-contact div {
+    margin-bottom: 20px; /* Ajusta el margen inferior entre los elementos según sea necesario */
+  }
+  
+  .email-button {
+    background-color: #b4047e; /* Reemplaza con tu color primario deseado */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .email-button:hover {
+    background-color: #ffafd6; /* Reemplaza con tu color de resaltado deseado */
+  }
+  
+  p {
+    margin-top: 20px; 
+    text-align: center;
+  }
+  

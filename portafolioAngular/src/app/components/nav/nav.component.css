@@ -1,0 +1,35 @@
+/* Estilos para app-nav */
+nav {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usa flexbox para la distribución horizontal */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme en el espacio */
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #ecf0f1;
+}
+
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: 12px; /* Ajusta el tamaño de la letra para pantallas más pequeñas */
+    }
+}

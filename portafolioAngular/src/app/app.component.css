@@ -1,0 +1,73 @@
+.background-container {
+    min-height: 50vh; /* Establece la altura mínima para cubrir la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5%;
+    padding-left:20%;
+    padding-right: 20%;
+    
+  }
+  
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+    /* Elimina la propiedad background-image y agrega el video */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: contrast(0.5);
+  
+    /* Añade el video como fondo */
+    overflow: hidden; /* Para asegurarse de que el video no se desborde del contenedor */
+  }
+  
+
+  .background-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: contrast(0.5); 
+  }
+  app-header, app-about-me {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  
+  @media (max-width: 768px) {
+    .background-container {
+      padding-left: 2%; /* Ajusta el padding para tamaños de pantalla más pequeños */
+      padding-right: 2%; /* Ajusta el padding para tamaños de pantalla más pequeños */
+    }
+  }
+  
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding:2%;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

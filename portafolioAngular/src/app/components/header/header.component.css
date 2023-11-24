@@ -1,0 +1,24 @@
+/* Agrega estos estilos a tu archivo de estilos CSS */
+
+h1, h2 {
+    color: white; /* Color de letra blanco */
+    font-family: 'TuFuente', sans-serif; /* Reemplaza 'TuFuente' con la fuente deseada */
+    font-weight: bold; /* Letra en negrita (bold) */
+  }
+  
+
+/* Estilos para agrandar los iconos */
+mat-icon {
+  font-size: 1em; 
+  height: 1em;
+  width: 1em; 
+  margin-right: 15px;
+}
+
+/* Estilos para agrandar los iconos */
+.icon-container {
+  display: inline-block; 
+  font-size: 3em; 
+}
+
+  

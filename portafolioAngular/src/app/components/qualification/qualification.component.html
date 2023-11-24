@@ -1,0 +1,17 @@
+<!-- qualification.component.html -->
+<h1>Education</h1>
+<div class="education-timeline">
+    <div class="education-event" *ngFor="let education of educationList">
+      <mat-card class="education-card">
+        <mat-card-header>
+          <img src="assets/img/{{ education.logo }}" alt="{{ education.institution }} logo" class="logo-icon" />
+          <mat-card-content>{{ education.institution }}</mat-card-content>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ education.degree }}</p>
+          <p>{{ education.startDate }} - {{ education.endDate || 'Presente' }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
