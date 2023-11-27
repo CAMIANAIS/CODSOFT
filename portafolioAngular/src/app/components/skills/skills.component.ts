@@ -6,25 +6,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  carouselOptions: OwlOptions = {
-    loop: true,
-    autoplay: true,
-    autoHeight: false,
-    autoWidth: false,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      760: {
-        items: 1,
-      },
-    },
-  
-  };
 
   skills = [
     {
@@ -56,10 +37,11 @@ export class SkillsComponent {
       items: [
         { name: 'GitHub', logo: '/assets/img/github.png' },
         { name: 'Miro', logo: '/assets/img/miro.png' },
-        { name: 'Figma', logo: '/assets/img/figma.png' },
+        { name: 'Figma', logo: '/assets/img/figma.png'},
         { name: 'Canva', logo: '/assets/img/canva.png' },
         { name: 'Trello', logo: '/assets/img/trello.png' }
       ]
     }
   ];
+  
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolioAngular';
+
+  showScrollButton = false;
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    // Lógica para determinar cuándo mostrar el botón
+    const aboutMeSection = document.getElementById('about');
+    if (aboutMeSection) {
+      this.showScrollButton = window.scrollY > aboutMeSection.offsetTop;
+    }
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

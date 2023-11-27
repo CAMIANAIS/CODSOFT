@@ -26,4 +26,17 @@
     margin-top: 20px; 
     text-align: center;
   }
+  mat-icon {
+    font-size: 2em; 
+    height: 1.5em;
+    width: 1.5em; 
+    margin-right: 15px;
+  }
+  
+  /* Estilos para agrandar los iconos */
+  .icon-container {
+    display: inline-block; 
+    font-size: 4em; 
+  }
+  
   
