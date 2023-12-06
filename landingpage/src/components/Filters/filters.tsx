@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Filters from '../Filters/filters.tsx';
-import './filters.css';
 
-const FindEvents: React.FC = () => {
+import './Filters.css';
+
+const Filters: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,14 +26,6 @@ const FindEvents: React.FC = () => {
   };
 
   return (
-    <div className="find-events-container">
-      <div className="right-side">
-        <Filters />
-      </div>
-      <div className="left-side">
-        <div className='imgContainer'>
-
-        </div>
         <div className="search-container">
           <input
             type="text"
@@ -51,9 +43,8 @@ const FindEvents: React.FC = () => {
           <button onClick={() => handleFilterClick('this weekend')} className="filter-button">This Weekend</button>
           <button onClick={() => handleFilterClick('free')} className="filter-button">Free</button>
         </div>
-      </div>
-    </div>
+    
   );
 };
 
-export default FindEvents;
+export default Filters;

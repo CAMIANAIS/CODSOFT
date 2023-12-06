@@ -1,8 +1,11 @@
 import React from 'react';
-import './Contactanos.css'
+import './Contactanos.css';
+import Header from '../Header/header.tsx';
 const Contactanos: React.FC = () => {
   return (
 <section className="text-gray-600 body-font relative">
+    <>
+    <Header />
       <div className="absolute inset-0 bg-gray-300">
       <iframe
         width="100%"
@@ -48,6 +51,7 @@ const Contactanos: React.FC = () => {
           </p>
         </div>
       </div>
+    </>
     </section>
   );
 };

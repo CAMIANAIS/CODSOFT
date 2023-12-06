@@ -1,4 +1,4 @@
-/* FindEventsContainer.css */
+@import url('../../index.css');
 
 .find-events-container {
     display: flex;
