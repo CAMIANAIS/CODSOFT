@@ -1,0 +1,24 @@
+@import url('../../index.css');
+.header-container {
+    display: flex;
+    justify-content:flex-end;
+    background-color:var(--md-ref-palette-primary40);
+    padding: 10px;
+    gap:16px;
+    position: fixed;
+    top:0;
+    width:100%
+  }
+  
+  .header-link {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto de los enlaces */
+    padding: 5px 25px;
+    transition: background-color 0.3s; /* Efecto de transición en el color de fondo */
+  }
+  
+  .header-link:hover {
+    background-color: var(--md-ref-palette-primary50); /* Color de fondo al pasar el ratón sobre el enlace */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el enlace */
+  }
+  

@@ -1,0 +1,18 @@
+@import url('../../index.css');
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .event-card {
+    border: 1px solid var(--md-ref-palette-primary90);
+    background-color: var(--md-ref-palette-primary90);
+    padding: 10px;
+    text-align: center;
+    border-radius: 2vh;
+    text-decoration: none;
+  }
+  
+
+  

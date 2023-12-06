@@ -1,0 +1,36 @@
+/* FindEventsContainer.css */
+
+.find-events-container {
+    display: flex;
+
+    margin: 20px; /* Ajusta el margen según sea necesario */
+  }
+  
+  .left-side {
+    width: 50%;
+    padding-right: 10px; /* Ajusta el espacio entre la imagen y el resto del contenido */
+  }
+  
+  .right-side {
+    width: 50%;
+    padding-left: 10px; /* Ajusta el espacio entre Filters y el resto del contenido */
+  }
+  
+  .left-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 760px) {
+    .find-events-container {
+      flex-direction: column;
+    }
+  
+    .left-side,
+    .right-side {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  

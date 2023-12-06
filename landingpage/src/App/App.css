@@ -1,0 +1,13 @@
+
+
+header {
+  font-family: var(--header-font-family);
+}
+
+button {
+  font-family: var(--button-font-family);
+}
+
+p, span {
+  font-family: var(--text-font-family);
+}

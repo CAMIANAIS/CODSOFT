@@ -1,0 +1,15 @@
+.imgContainer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .portada {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* Establece una altura máxima en viewport height */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente en el contenedor */
+  }
+  
+  
