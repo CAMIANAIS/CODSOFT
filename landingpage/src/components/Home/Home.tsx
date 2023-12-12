@@ -10,7 +10,6 @@ const Home: React.FC = () => {
   const events = [
     {
       id: 1,
-      poster: <img src={washingtonEvent} alt="Evento de Washington" />,
       title: 'Washington DC II FIRST Tech Challenge Qualifier',
       date: 'domingo a las 07:30',
       place: 'District of Columbia International School',
@@ -18,7 +17,6 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      poster: 'url_de_la_imagen_1',
       title: 'Washington DC II FIRST Tech Challenge Qualifier',
       date: 'domingo a las 07:30',
       place: 'District of Columbia International School',
@@ -26,7 +24,13 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      poster: 'url_de_la_imagen_2',
+      title: 'Washington DC II FIRST Tech Challenge Qualifier',
+      date: 'domingo a las 07:30',
+      place: 'District of Columbia International School',
+      price: '$50',
+    },
+    {
+      id: 4,
       title: 'Washington DC II FIRST Tech Challenge Qualifier',
       date: 'domingo a las 07:30',
       place: 'District of Columbia International School',

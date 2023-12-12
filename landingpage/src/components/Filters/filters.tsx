@@ -26,25 +26,24 @@ const Filters: React.FC = () => {
   };
 
   return (
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Buscar por evento"
-            value={searchTerm}
-            onChange={handleSearchChange}
-            className="search-input"
-          />
-          <button onClick={handleSearch} className="search-button">
-            {/* Puedes agregar aquí tu ícono de flecha */}
-            &#10148;
-          </button>
-          <button onClick={() => handleFilterClick('online')} className="filter-button">Online</button>
-          <button onClick={() => handleFilterClick('today')} className="filter-button">Today</button>
-          <button onClick={() => handleFilterClick('this weekend')} className="filter-button">This Weekend</button>
-          <button onClick={() => handleFilterClick('free')} className="filter-button">Free</button>
-        </div>
-    
+    <div className="search-container">
+      <input
+        type="text"
+        placeholder="Buscar por evento"
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="search-input"
+      />
+      <button onClick={handleSearch} className="search-button">
+        {/* Puedes agregar aquí tu ícono de lupa */}
+        &#128269; {/* Esto es un emoji de lupa, puedes reemplazarlo con tu ícono */}
+      </button>
+      {/* Otros botones de filtro aquí */}
+      <button onClick={() => handleFilterClick('online')} className="filter-button">Online</button>
+      <button onClick={() => handleFilterClick('today')} className="filter-button">Today</button>
+      <button onClick={() => handleFilterClick('this weekend')} className="filter-button">This Weekend</button>
+      <button onClick={() => handleFilterClick('free')} className="filter-button">Free</button>
+    </div>
   );
-};
-
+}  
 export default Filters;

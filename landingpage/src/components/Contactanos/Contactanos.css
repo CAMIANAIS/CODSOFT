@@ -1,213 +1,214 @@
-/* Agrega este código a tu archivo de estilos CSS */
+/* Contactanos.css */
+.absolute.inset-0.bg-gray-300 {
+  padding-top: 60px; /* Ajusta este valor según sea necesario para evitar que el mapa se superponga directamente al encabezado */
+  z-index: 1; /* Asegura que el mapa esté detrás de otros elementos */
+}
+/* Estilo general para la sección */
+.text-gray-600 {
+  font-family: 'TuFuente', sans-serif; /* Ajusta la fuente según tu preferencia */
+}
+
+.body-font {
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tu preferencia */
+}
+
+.relative {
+  position: relative;
+}
+
+/* Estilos para el mapa */
+.bg-gray-300 {
+  background-color: #ccc; /* Cambia el color de fondo según tus preferencias */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(1) contrast(1.2) opacity(0.4);
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  padding: 5px; /* Ajusta el relleno según tus preferencias */
+  margin: auto;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Ocupa todo el ancho en dispositivos de tablet */
+  }
+}
+
+
+.bg-white {
+  background-color: #fff; /* Cambia el color de fondo según tus preferencias */
+}
+
+.rounded-lg {
+  border-radius: 8px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+.p-8 {
+  padding: 8px; /* Ajusta el relleno según tus preferencias */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.md:ml-auto {
+  margin-left: auto; /* Ajusta el margen según tus preferencias */
+}
+
+.w-full {
+  width: 100%; /* Ajusta el ancho según tus preferencias */
+}
+
+.mt-10 {
+  margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+}
+
+.md:mt-0 {
+  margin-top: 0; /* Ajusta el margen superior según tus preferencias */
+}
+
+.relative.z-10 {
+  z-index: 10; /* Ajusta el índice z según tus preferencias */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Ajusta la sombra según tus preferencias */
+}
+
+.text-gray-900 {
+  color: #333; /* Ajusta el color de texto según tus preferencias */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+.mb-1 {
+  margin-bottom: 1em; /* Ajusta el margen inferior según tus preferencias */
+}
+
+.font-medium {
+  font-weight: 500; /* Ajusta el grosor de la fuente según tus preferencias */
+}
+
+.title-font {
+  font-family: 'OtraFuente', sans-serif; /* Ajusta la fuente según tu preferencia */
+}
+
+.leading-relaxed {
+  line-height: 1.5; /* Ajusta el interlineado según tus preferencias */
+}
+
+.mb-5 {
+  margin-bottom: 1.25em; /* Ajusta el margen inferior según tus preferencias */
+}
 
 .text-gray-600 {
-    color: #4a5568;
-  }
-  
-  .body-font {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .absolute {
-    position: absolute;
-  }
-  
-  .inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .bg-gray-300 {
-    background-color: #e2e8f0;
-  }
-  
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  
-  .container {
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  
-  .py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-  
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .lg:w-1/3 {
-    width: 33.33333%;
-  }
-  
-  .md:w-1/2 {
-    width: 50%;
-  }
-  
-  .bg-white {
-    background-color: #ffffff;
-  }
-  
-  .rounded-lg {
-    border-radius: 0.5rem;
-  }
-  
-  .p-8 {
-    padding: 2rem;
-  }
-  
-  .md:ml-auto {
-    margin-left: auto;
-  }
-  
-  .w-full {
-    width: 100%;
-  }
-  
-  .mt-10 {
-    margin-top: 2.5rem;
-  }
-  
-  .md:mt-0 {
-    margin-top: 0;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .z-10 {
-    z-index: 10;
-  }
-  
-  .shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
-  
-  .text-gray-900 {
-    color: #1a202c;
-  }
-  
-  .text-lg {
-    font-size: 1.125rem;
-  }
-  
-  .mb-1 {
-    margin-bottom: 0.25rem;
-  }
-  
-  .font-medium {
-    font-weight: 500;
-  }
-  
-  .title-font {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .leading-relaxed {
-    line-height: 1.625;
-  }
-  
-  .mb-5 {
-    margin-bottom: 1.25rem;
-  }
-  
-  .text-gray-700 {
-    color: #4a5568;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .mb-4 {
-    margin-bottom: 1rem;
-  }
-  
-  .leading-7 {
-    line-height: 1.75;
-  }
-  
-  .text-sm {
-    font-size: 0.875rem;
-  }
-  
-  .border {
-    border-width: 1px;
-  }
-  
-  .focus:border-purple-500:focus {
-    border-color: #6b46c1;
-  }
-  
-  .focus:ring-2 {
-    box-shadow: 0 0 0 2px #d6bcfa;
-  }
-  
-  .focus:ring-purple-200:focus {
-    box-shadow: 0 0 0 2px rgba(179, 139, 255, 0.5);
-  }
-  
-  .outline-none {
-    outline: 0 !important;
-  }
-  
-  .py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-  
-  .px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  
-  .transition-colors {
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  }
-  
-  .duration-200 {
-    transition-duration: 0.2s;
-  }
-  
-  .ease-in-out {
-    transition-timing-function: ease-in-out;
-  }
-  
-  .text-white {
-    color: #ffffff;
-  }
-  
-  .bg-purple-500 {
-    background-color: #805ad5;
-  }
-  
-  .border-0 {
-    border-width: 0;
-  }
-  
-  
+  color: #666; /* Ajusta el color de texto según tus preferencias */
+}
+
+.relative.mb-4 {
+  margin-bottom: 1em; /* Ajusta el margen inferior según tus preferencias */
+}
+
+.leading-7 {
+  line-height: 1.75; /* Ajusta el interlineado según tus preferencias */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+.text-gray-700 {
+  color: #444; /* Ajusta el color de texto según tus preferencias */
+}
+
+.border {
+  border: 1px solid #ddd; /* Ajusta el estilo del borde según tus preferencias */
+}
+
+.focus:border-purple-500:focus {
+  border-color: #805ad5; /* Ajusta el color del borde enfocado según tus preferencias */
+}
+
+.focus:ring-2.focus:ring-purple-200:focus {
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.5); /* Ajusta la sombra del enfoque según tus preferencias */
+}
+
+.outline-none {
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+.py-1 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em; /* Ajusta el relleno superior e inferior según tus preferencias */
+}
+
+.px-3 {
+  padding-left: 0.75em;
+  padding-right: 0.75em; /* Ajusta el relleno izquierdo y derecho según tus preferencias */
+}
+
+.transition-colors {
+  transition: color 0.2s ease-in-out; /* Ajusta la duración de la transición de color según tus preferencias */
+}
+
+.duration-200 {
+  transition-duration: 0.2s; /* Ajusta la duración de la transición según tus preferencias */
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out; /* Ajusta la función de temporización según tus preferencias */
+}
+
+.resize-none {
+  resize: none; /* Desactiva el cambio de tamaño en el textarea */
+}
+
+.h-32 {
+  height: 8rem; /* Ajusta la altura según tus preferencias */
+}
+
+.hover:bg-purple-600:hover {
+  background-color: #6b46c1; /* Ajusta el color de fondo al pasar el ratón según tus preferencias */
+}
+
+.border-0 {
+  border-width: 0; /* Elimina el borde */
+}
+
+.py-2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; /* Ajusta el relleno superior e inferior según tus preferencias */
+}
+
+.px-6 {
+  padding-left: 1.5em;
+  padding-right: 1.5em; /* Ajusta el relleno izquierdo y derecho según tus preferencias */
+}
+
+.focus:outline-none:focus {
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+.rounded {
+  border-radius: 0.375rem; /* Ajusta el radio de borde según tus preferencias */
+}
+
+.text-xs {
+  font-size: 0.75rem; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+/* Ajusta el margen superior según tus preferencias */
+.mt-3 {
+  margin-top: 0.75em;
+}
+

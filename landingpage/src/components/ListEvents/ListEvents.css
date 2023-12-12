@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 10px;
   }
   
   .event-card {
@@ -14,5 +15,17 @@
     text-decoration: none;
   }
   
+  .event-button {
+    background-color: var(--md-ref-palette-primary40);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .event-button:hover {
+    background-color: var(--md-ref-palette-primary60);
+  }
 
   

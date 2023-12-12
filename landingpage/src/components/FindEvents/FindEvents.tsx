@@ -5,6 +5,7 @@ import './FindEvents.css';
 import portada from '../../assets/img/portada.png';
 import Header from '../Header/header.tsx';
 
+
 const FindEvents: React.FC = () => {
   return (
     <>
